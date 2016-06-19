@@ -1,0 +1,12 @@
+﻿@model SteamApp.Models.MarketItemModel
+@{
+    ViewBag.Title = "AddItem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AddItem</h2>
+@using (Html.BeginForm("AddItem", "Home", FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.ItemUrl)
+    <input type="submit" value="Add Item"/>
+}

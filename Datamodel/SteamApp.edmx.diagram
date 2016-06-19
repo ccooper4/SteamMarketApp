@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="448b5c2489ce4bb1a4050983ba802cc0" Name="Diagram1">
+        <EntityTypeShape EntityType="SteamAppModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SteamAppModel.App_Image" Width="1.5" PointX="6" PointY="6.5" />
+        <EntityTypeShape EntityType="SteamAppModel.App_MarketItem" Width="1.5" PointX="8.25" PointY="3.875" />
+        <EntityTypeShape EntityType="SteamAppModel.AspNetRole" Width="1.5" PointX="0.75" PointY="4.5" />
+        <EntityTypeShape EntityType="SteamAppModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="9.25" />
+        <EntityTypeShape EntityType="SteamAppModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="SteamAppModel.AspNetUser" Width="1.5" PointX="3" PointY="3.25" />
+        <AssociationConnector Association="SteamAppModel.FK__App_Marke__Image__4BAC3F29" />
+        <AssociationConnector Association="SteamAppModel.FK__App_Marke__UserI__45F365D3" />
+        <AssociationConnector Association="SteamAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SteamAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SteamAppModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

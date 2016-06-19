@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamApp", "SteamApp\SteamApp.csproj", "{06BCB5D5-8877-4567-A674-BD29776CE79C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datamodel", "Datamodel\Datamodel.csproj", "{95F80C10-9A8E-4286-9BB8-5B2BB6FEA8C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{0C46C9D2-5FB3-4998-BF77-3D6F554F9EF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06BCB5D5-8877-4567-A674-BD29776CE79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BCB5D5-8877-4567-A674-BD29776CE79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BCB5D5-8877-4567-A674-BD29776CE79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BCB5D5-8877-4567-A674-BD29776CE79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F80C10-9A8E-4286-9BB8-5B2BB6FEA8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F80C10-9A8E-4286-9BB8-5B2BB6FEA8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F80C10-9A8E-4286-9BB8-5B2BB6FEA8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F80C10-9A8E-4286-9BB8-5B2BB6FEA8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C46C9D2-5FB3-4998-BF77-3D6F554F9EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C46C9D2-5FB3-4998-BF77-3D6F554F9EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C46C9D2-5FB3-4998-BF77-3D6F554F9EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C46C9D2-5FB3-4998-BF77-3D6F554F9EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

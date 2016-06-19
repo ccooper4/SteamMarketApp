@@ -1,0 +1,74 @@
+﻿@using Newtonsoft.Json
+@model List<SteamApp.Models.MarketItemModel>
+
+<div id="main-content">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Last Known Price</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Description
+                            </td>
+                            <td>
+                                @item.LastKnownPrice.Value.ToString("C2")
+                            </td>
+                            <td>
+                                <img src="data:image;base64,@System.Convert.ToBase64String(item.Image)" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            @Html.ActionLink("Retrieve New Prices", "UpdatePrices", "Home", new { @class = "btn btn-primary btn-large", @id = "new-prices-btn" })
+            @Html.ActionLink("Add Item", "AddItemPage", "Home", new { @class = "btn btn-primary btn-large" })
+        </div>
+    }
+</div>
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div class="alert-warning">Please login first!</div>
+}
+
+@section scripts {
+    <script src="../../Scripts/Home.js"></script>
+}
+<script type="text/javascript">
+    var data = @Html.Raw(JsonConvert.SerializeObject(Model));
+</script>
+
+<footer>
+    <div id="loading" class="vertical-center hidden">
+        <div class="windows8">
+            <div class="wBall" id="wBall_1">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_2">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_3">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_4">
+                <div class="wInnerBall"></div>
+            </div>
+            <div class="wBall" id="wBall_5">
+                <div class="wInnerBall"></div>
+            </div>
+        </div>
+    </div>
+</footer>
